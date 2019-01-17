@@ -1,0 +1,55 @@
+<div class="main-wrapper">
+  <!-- Header Parts Start-->
+  <div id="header">
+    <!-- Top Right part Links-->
+    <div id="welcome">
+      <div id="language"><%= t(".language")%>
+        <ul>
+          <li><img src="assets/flags/gb.png" alt="English" /><%= t(".english")%></a></li>
+        </ul>
+      </div>
+      <div class="links"><%= t("my_account")%>
+        <ul>
+          <li><%= link_to t("my_account"), "#" %></li>
+          <li><%= link_to t(".cart"), "#" %></li>
+          <li><%= link_to t(".checkout"), "#" %></li>
+        </ul>
+      </div>
+      <%= link_to t(".login"), "#" %> <%= link_to t(".register"), "#" %> </div>
+    <div id="logo"><a href="index-2.html"><img src="assets/Framgia-Logo.png"></a></div>
+    <div id="search">
+      <div class="button-search"></div>
+      <input type="text" value="" placeholder="" id="filter_name" name="search">
+    </div>
+    <!--Mini Cart Start-->
+    <div id="cart">
+      <div class="heading">
+        <h4><img width="32" height="32" alt="small-cart-icon" src="assets/cart-bg.png"></h4>
+        <a><span id="cart-total">0 item(s)</span></a></div>
+    </div>
+    <!--Mini Cart End-->
+  </div>
+  <!--Top Navigation Start-->
+  <div id="menu"><span><%= t(".menu")%></span>
+    <ul>
+      <li class="home"><a href="index-2.html"><span><%= t(".home")%></span></a></li>
+      <li><%= link_to t("foods") %>
+        <div>
+          <ul>
+            <li><a href="category.html"><%= t(".cheese_cake") %></a></li>
+            <li><a href="category.html"><%= t(".cookie") %></a></li>
+            <li><a href="category.html"><%= t(".flan_cake") %></a></li>
+          </ul>
+        </div>
+      </li>
+      <li><%= link_to t("beverages") %>
+        <div>
+          <ul>
+            <li><a href="category.html"><%= t(".royal_tea") %></a></li>
+            <li><a href="category.html"><%= t(".bubble_tea") %></a></li>
+            <li><a href="category.html"><%= t(".coffee") %></a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %></title>
-    <%= render "layouts/admin/rails_default" %>
-    <%= render "layouts/admin/shim" %>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= render "layouts/rails_defaults" %>
+    <%= render "layouts/shim" %>
   </head>
   <body>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
