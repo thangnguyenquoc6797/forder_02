@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  product: one
+  rate: 
+  rate_at: 2019-01-17
+
+two:
+  user: two
+  product: two
+  rate: 
+  rate_at: 2019-01-17

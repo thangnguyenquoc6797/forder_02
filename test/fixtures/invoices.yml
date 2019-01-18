@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  export_date: 2019-01-17 11:15:01
+  status: 
+
+two:
+  user: two
+  export_date: 2019-01-17 11:15:01
+  status: 
