@@ -30,9 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
   admin:
+    formats:
+      date: "%d-%m-%Y"
     update: "Update"
     delete: "Delete"
+    a_z: "A-Z"
+    z_a: "Z-A"
+    male: "Male"
+    female: "Female"
     _header:
       project_name: "FOOD & DRINK FRAMGIA"
       profile: "Profile"
@@ -63,6 +74,12 @@ en:
         address: "Address"
         role: "Role"
         action: "Action"
+        sort: "Sort by"
+      edit:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirm_password: "Password confirmation"
   layout:
     admin:
       title: "| Food & Drink"
