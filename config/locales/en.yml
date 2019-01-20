@@ -30,9 +30,39 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  app:
-    views:
-      layout:
-        application:
-          title: "FoodsDrinks"
+  admin:
+    update: "Update"
+    delete: "Delete"
+    _header:
+      project_name: "FOOD & DRINK FRAMGIA"
+      profile: "Profile"
+      logout: "Logout"
+    _sidebar:
+      dashboard: "Dashboard"
+      user: "Users"
+      category: "Categories"
+      product: "Products"
+      invoice: "Invoices"
+      invoice_detail: "Invoice Detail"
+      suggest_product: "Suggest Product"
+    static_page:
+      home:
+        title: "Home"
+        detail: "View Details"
+        statictis: "Statistics"
+        by: "By..."
+    users:
+      index:
+        title: "User"
+        search: "Search"
+        id: "ID"
+        fullname: "Fullname"
+        gender: "Gender"
+        birthday: "Birthday"
+        phone: "Phone number"
+        address: "Address"
+        role: "Role"
+        action: "Action"
+  layout:
+    admin:
+      title: "| Food & Drink"

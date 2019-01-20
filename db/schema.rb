@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(version: 2019_01_17_042759) do
     t.string "avater"
     t.string "password_digest"
     t.string "remember_digest"
-    t.boolean "role", default: false, null: false
+    t.integer "role", default: 0, null: false
     t.boolean "activated"
     t.datetime "activated_at"
     t.string "activation_digest"
