@@ -36,8 +36,6 @@ en:
       long: "%B %d, %Y"
       short: "%b %d"
   admin:
-    formats:
-      date: "%d-%m-%Y"
     update: "Update"
     delete: "Delete"
     a_z: "A-Z"
@@ -80,6 +78,22 @@ en:
         email: "Email"
         password: "Password"
         confirm_password: "Password confirmation"
+    categories:
+      index:
+        title: "Category"
+        name: "Name of Category"
+        parent_category: "Parent of category"
+    products:
+      index:
+        name: "Name"
+        price: "Price"
+        quantity: "Quantity"
+        picture: "Picture"
+        describle: "Describle"
+        type: "Type"
+        expiry_date: "Expiry date"
+        manufacture_date: "Manufacture date"
+        category: "Category"
   layout:
     admin:
       title: "| Food & Drink"

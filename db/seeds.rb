@@ -27,3 +27,31 @@ User.create!(
     activated: true,
     role: 0)
 end
+
+Category.create!(name: "Foods", parent_id: 0)
+Category.create!(name: "Drinks", parent_id: 0)
+
+10.times do |n|
+  name = "Food-#{n+1}"
+  Category.create!(
+    name: name,
+    parent_id: 1)
+end
+
+3.times do |n|
+  name = "Drink-#{n+1}"
+  Category.create!(
+    name: name,
+    parent_id: 2)
+end
+10.times do |n|
+  Product.create!(
+    name: "Banh Oishi",
+    price: 8000,
+    quantity: 5,
+    describle: "Banh Oishi rat ngon",
+    type_product: 0,
+    expiry_date: "25/2/2019",
+    manufacture_date: Time.zone.now,
+    category_id: Faker::Number.between(3, 12))
+end
