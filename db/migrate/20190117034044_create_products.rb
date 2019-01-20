@@ -7,9 +7,9 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :quantity
       t.string :picture
       t.string :describle
-      t.integer :type
-      t.datetime :expiry_date
-      t.datetime :manufacture_date
+      t.integer :type_product
+      t.date :expiry_date
+      t.date :manufacture_date
 
       t.timestamps
     end

@@ -44,3 +44,13 @@ end
     name: name,
     parent_id: 2)
 end
+
+Product.create!(
+  name: "Banh Oishi",
+  price: 8000,
+  quantity: 5,
+  describle: "Banh Oishi rat ngon",
+  type_product: 0,
+  expiry_date: "25/2/2019",
+  manufacture_date: Time.zone.now,
+  category_id: 3)

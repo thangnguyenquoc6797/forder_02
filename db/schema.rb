@@ -51,9 +51,9 @@ ActiveRecord::Schema.define(version: 2019_01_17_042759) do
     t.integer "quantity"
     t.string "picture"
     t.string "describle"
-    t.integer "type"
-    t.datetime "expiry_date"
-    t.datetime "manufacture_date"
+    t.integer "type_product"
+    t.date "expiry_date"
+    t.date "manufacture_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

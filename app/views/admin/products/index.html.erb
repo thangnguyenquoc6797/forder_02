@@ -1,0 +1,38 @@
+  <% provide :title, "Product" %>
+  <body>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <div class="btn-group">
+          <div class="row">
+            <div class="navbar-form navbar-right">
+              <%= form_tag do %>
+                <%= label_tag :product %>
+                <%= submit_tag "Insert", class: "btn btn-primary" %>
+              <% end %>
+            </div>
+        </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Picture</th>
+                  <th>Describle</th>
+                  <th>Type</th>
+                  <th>Expiry date</th>
+                  <th>Manufacture date</th>
+                  <th>Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= render @products %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  </body>
+</html>
