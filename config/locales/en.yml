@@ -36,8 +36,6 @@ en:
       long: "%B %d, %Y"
       short: "%b %d"
   admin:
-    formats:
-      date: "%d-%m-%Y"
     update: "Update"
     delete: "Delete"
     a_z: "A-Z"
@@ -80,6 +78,11 @@ en:
         email: "Email"
         password: "Password"
         confirm_password: "Password confirmation"
+    categories:
+      index:
+        title: "Category"
+        name: "Name of Category"
+        parent_id: "Parent_ID"
   layout:
     admin:
       title: "| Food & Drink"

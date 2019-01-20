@@ -1,0 +1,25 @@
+<tr>
+  <% if category.parent_id == 0 %>
+    <tr>
+      <td><%= category.id %></td>
+      <td><%= category.name %></td>
+      <td><%= category.parent_id %></td>
+      <td><%= link_to t("admin.update"), "#" %> |
+        <%=link_to t("admin.delete"), "#" %></td>
+    </tr>
+    <% @categories.each do |item| %>
+      <% if item.parent_id == category.id %>
+        <tr>
+          <td>
+            <div id="collapseOne" class="collapse in">
+              <td><%= item.name %></td>
+              <td><%= item.parent_id %></td>
+              <td><%= link_to t("admin.update"), "#" %> |
+                <%=link_to t("admin.delete"), "#" %></td>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    <% end%>
+  <% end%>
+</tr>

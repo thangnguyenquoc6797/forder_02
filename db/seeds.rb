@@ -27,3 +27,20 @@ User.create!(
     activated: true,
     role: 0)
 end
+
+Category.create!(name: "Foods", parent_id: 0)
+Category.create!(name: "Drinks", parent_id: 0)
+
+3.times do |n|
+  name = "Food-#{n+1}"
+  Category.create!(
+    name: name,
+    parent_id: 1)
+end
+
+3.times do |n|
+  name = "Drink-#{n+1}"
+  Category.create!(
+    name: name,
+    parent_id: 2)
+end
