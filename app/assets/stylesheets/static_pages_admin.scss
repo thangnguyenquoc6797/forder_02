@@ -125,3 +125,14 @@ body {
 .dropdown{
   float: left;
 }
+
+table .collapse.in {
+  display: table-row;
+}
+
+.table-wrapper-scroll {
+display: block;
+max-height: 450px;
+overflow-y: auto;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+}

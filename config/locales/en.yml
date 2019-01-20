@@ -36,8 +36,6 @@ en:
       long: "%B %d, %Y"
       short: "%b %d"
   admin:
-    formats:
-      date: "%d-%m-%Y"
     update: "Update"
     delete: "Delete"
     a_z: "A-Z"
@@ -80,6 +78,53 @@ en:
         email: "Email"
         password: "Password"
         confirm_password: "Password confirmation"
+    categories:
+      index:
+        title: "Category"
+        name: "Name of Category"
+        parent_category: "Parent of category"
   layout:
     admin:
       title: "| Food & Drink"
+
+  base_title: "Foods & Drink"
+  my_account: "My Account"
+  foods: "Foods"
+  beverages: "Drinks"
+  category: "Category"
+  latest: "Latest"
+  featured: "Featured"
+  specials: "Specials"
+  layouts:
+    footer:
+      information: "Information"
+      about: "About"
+      elements: "Elements"
+      cs: "Customer Service"
+      contact: "Contact"
+      sitemap: "Site map"
+      order_history: "Order History"
+      wishlist: "Wish List"
+      address: "Floor 4, Fhome Building, 16 Ly Thuong Kiet, Hai Chau, Da Nang, Viet Nam"
+      mobile: "0782 772 166"
+      email: "trantrongthucdn@gmail.com"
+    header:
+      language: "Language"
+      english: "English"
+      menu: "Menu"
+      cart: "Shopping Cart"
+      checkout: "Checkout"
+      login: "Login"
+      register: "Create an ancount"
+      home: "Home"
+      cheese_cake: "Cheese cake"
+      cookie: "Cookie"
+      flan_cake: "Flan cake"
+      royal_tea: "Royal tea"
+      bubble_tea: "Bubble tea"
+      coffee: "Coffee"
+  static_pages:
+    index:
+      tranchauduongden: "Sua tuoi tran chau duong den"
+
+

@@ -1,0 +1,20 @@
+<tr class="clickable" data-toggle="collapse" id="row1" data-target=".row_<%= category_counter %>">
+  <% if category.parent_id == 0 %>
+    <td><i class="glyphicon glyphicon-plus"></i></td>
+    <td><%= category.name %></td>
+    <td></td>
+    <td><%= link_to t("admin.update"), "#" %> |
+        <%=link_to t("admin.delete"), "#" %></td>
+  <% end %>
+</tr>
+<% @categories.each do |item| %>
+  <% if item.parent_id == category.id %>
+    <tr class="collapse row_<%= category_counter %>">
+      <td></td>
+      <td><%= item.name %></td>
+      <td><%= category.name %></td>
+      <td><%= link_to t("admin.update"), "#" %> |
+          <%=link_to t("admin.delete"), "#" %></td>
+    </tr>
+  <% end %>
+<% end %>

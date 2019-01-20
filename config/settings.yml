@@ -1,3 +1,5 @@
 admin:
   users_controller:
     per_page: 5
+  categories_controller:
+    per_page: 4

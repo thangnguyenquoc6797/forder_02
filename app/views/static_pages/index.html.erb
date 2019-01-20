@@ -1,0 +1,75 @@
+  <!--Top Navigation Start-->
+  <div id="container">
+    <!--Left Part-->
+    <div id="column-left">
+      <!--Categories Part Start-->
+      <div class="box">
+        <div class="box-heading"><%= t("category") %></div>
+        <div class="box-content box-category">
+          <ul id="custom_accordion">
+            <li class="category25"><a class="nochild"><%= link_to t("foods"), "#" %></li>
+            <li class="category57"><a class="nochild"><%= link_to t("beverages"), "#" %></li>
+          </ul>
+        </div>
+      </div>
+      <!--Categories Part End-->
+      <!--Latest Product Start-->
+      <div class="box">
+        <div class="box-heading"><%= t("latest") %></div>
+        <div class="box-content">
+          <div class="box-product">
+            <div>
+              <div class="image"><a href="product.html"><img src="assets/product/tranchauduongden_60x60.png"></a>
+              </div>
+              <div class="name"><a href="product.html"><%= t(".tranchauduongden") %></a></div>
+              <div class="price"> 25.000VND </div>
+              <div class="rating"><img src="assets/stars-3.png" alt="Based on 1 reviews." /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Latest Product End-->
+      <!--Specials Product Start-->
+      <div class="box">
+        <div class="box-heading"><%= t("specials") %></div>
+        <div class="box-content">
+          <div class="box-product">
+            <div>
+              <div class="image"><a href="product.html"><img src="assets/product/tranchauduongden_60x60.png"></a>
+              </div>
+              <div class="name"><%= link_to t(".tranchauduongden"), "#" %></div>
+              <div class="price"> <span class="price-old">25.000VND</span> <span class="price-new">17.500VND</span> </div>
+              <div class="rating"><img src="assets/stars-0.png" alt="Based on 0 reviews." /></div>
+              <div class="cart">
+                <input type="button" value="Add to Cart" onClick="addToCart("42");" class="button" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Specials Product End-->
+    </div>
+    <!--Left End-->
+    <!--Middle Part Start-->
+    <div id="content">
+      <!--Featured Product Part Start-->
+      <div class="box">
+        <div class="box-heading"><%= t("featured") %></div>
+        <div class="box-content">
+          <div class="box-product">
+            <div>
+              <div class="image"><a href="#"><img src="assets/product/tranchauduongden_152x152.png" /></a></div>
+              <div class="name"><%= link_to t(".tranchauduongden"), "#" %></div>
+              <div class="price"> 25.000VND </div>
+              <div class="rating"><img src="assets/stars-0.png" alt="Based on 0 reviews." /></div>
+              <div class="cart">
+                <input type="button" value="Add to Cart" onClick="addToCart("40");" class="button" />
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Featured Product Part End-->
+    </div>
