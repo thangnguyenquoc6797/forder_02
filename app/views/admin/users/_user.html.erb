@@ -1,0 +1,11 @@
+<tr>
+  <td><%= user.id %></td>
+  <td><%= user.name %></td>
+  <td><%= user.gender %></td>
+  <td><%= l user.day_of_birth, format: :long %></td>
+  <td><%= user.phone_number %></td>
+  <td><%= user.address %></td>
+  <td><%= user.role %></td>
+  <td><%= link_to t("admin.update"), edit_admin_user_path(user) %> |
+    <%=link_to t("admin.delete"), admin_user_path(user), method: :delete %></td>
+</tr>
